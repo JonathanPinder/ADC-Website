@@ -1,0 +1,40 @@
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f3f3f3;
+}
+
+#wrapper {
+	max-width: 100%;
+	background-color: #fff;
+}
+
+header {
+	background-color: #3D2F24;
+	height: 250px;
+	border-top: 25px solid #FF6666;
+
+}
+
+header h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+}
+
+.logo{
+
+	background: url('logo.png');
+	width: 252px;
+	height: 100%;
+}
+
+#row {
+  float: left ;
+  width: 80% ;
+}
+
+#row1 {
+  float: left ;
+  width: 20% ;
+}
