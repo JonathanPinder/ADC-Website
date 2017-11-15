@@ -1,22 +1,56 @@
 body {
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Arial', sans-serif;
 	background-color: #f3f3f3;
 }
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #e6e6e6;
+    position: absolute; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 15%;
+    margin-left:-4.5%;
+    
+    min-height: 900px;
+    height: 805px;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #999966;
+    font-weight:1000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Main content */
+.main {
+    margin-top:0px; /* Add a top margin to avoid content overlay */
+
+}
+
 img {
-	max-width: 100%;
-
-
+	max-width: 75%;
 }
 
 #wrapper {
+
+    
 	max-width: 100%;
 	background-color: #fff;
-	border-top: 25px solid #F87060;
-	border-bottom: 25px solid #F87060;
+	border-top: 25px solid #FF6666;
+	border-bottom: 25px solid #FF6666;
 }
 
 header {
-	background-color: #3E3023
+	background-color: #3D2F24;
 /*	height: 250px; */
 	
 
@@ -30,12 +64,12 @@ header:after, #container:after {
 .title h1 {
 	text-transform: capitalize;
 	text-align: center;
-	color: #B3A394;
+	color: #fff;
 	line-height: 50px;
 	padding: 0 10px;
 }
 .title .description {
-	color: #B3A394;
+	color: #fff;
 	padding: 0 10px;
 }
 
@@ -46,7 +80,7 @@ header:after, #container:after {
 }
 
 .logo img {
-	max-width: 200px;
+	max-width: 100px;
 	max-height: 100%;
 	margin: 0 auto;
 }
@@ -55,7 +89,7 @@ header:after, #container:after {
 	padding: 70px 55px;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #CDD7D6;
+	background-color: lightblue;
 	position: relative;
 
 }
@@ -76,7 +110,7 @@ height: 0;
 border: 0 solid transparent;
 border-left-width: 50px;
 border-right-width: 50px;
-border-top: 70px solid #3E3023;
+border-top: 70px solid #3D2F24;
 position: absolute;
 top: 0;
 right: 0;
