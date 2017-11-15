@@ -1,40 +1,140 @@
 body {
-	font-family: 'Arial', sans-serif;
+	font-family: 'Cormorant Garamond', serif;
 	background-color: #f3f3f3;
+}
+img {
+	max-width: 100%;
+
+
 }
 
 #wrapper {
 	max-width: 100%;
 	background-color: #fff;
+	border-top: 25px solid #F87060;
+	border-bottom: 25px solid #F87060;
 }
 
 header {
-	background-color: #3D2F24;
-	height: 250px;
-	border-top: 25px solid #FF6666;
+	background-color: #3E3023
+/*	height: 250px; */
+	
 
 }
+header:after, #container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-header h1 {
-	text-transform: uppercase;
+.title h1 {
+	text-transform: capitalize;
 	text-align: center;
-	color: #fff;
+	color: #B3A394;
 	line-height: 50px;
+	padding: 0 10px;
+}
+.title .description {
+	color: #B3A394;
+	padding: 0 10px;
 }
 
-.logo{
-
-	background: url('logo.png');
-	width: 252px;
+.logo {
 	height: 100%;
+	text-align: center;
+	background: #EAEAEA;
 }
 
-#row {
-  float: left ;
-  width: 80% ;
+.logo img {
+	max-width: 200px;
+	max-height: 100%;
+	margin: 0 auto;
 }
 
-#row1 {
-  float: left ;
-  width: 20% ;
+#container {
+	padding: 70px 55px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #CDD7D6;
+	position: relative;
+
+}
+
+.speaker-image img {
+  border-radius: 50%;
+  max-width: 134px;
+
+}
+
+.speaker {
+	margin-bottom: 15px;
+}
+
+.triangle {
+  width: 0;
+height: 0;
+border: 0 solid transparent;
+border-left-width: 50px;
+border-right-width: 50px;
+border-top: 70px solid #3E3023;
+position: absolute;
+top: 0;
+right: 0;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+  	width: 30%;
+  	float: left;
+  	max-height: 259px;
+  	text-align: left;
+
+  }
+
+
+  .logo img {
+  	max-width: 100%;
+  	
+  }
+
+  .title {
+	width: 70%;
+  	float: left;
+}
+.title h1 {
+  	text-align: left;
+  	padding: 0 20px;
+}
+.title .description {
+	text-align: left;
+  	padding: 0 20px;
+}
+
+#container {
+	padding: 200px 60px 100px 60px;
+}
+.speaker {
+	width: 43%;
+	float: left;
+	margin-right: 7%
+}
+.speaker-image{
+	width: 45%;
+	margin-right: 5%;
+	float: left;
+}
+.speaker-bio {
+	width: 50%;
+	float: left;
+}
+
+.triangle {
+
+border-left-width: 91px;
+border-right-width: 91px;
+border-top: 131px solid #3D2F24;
+  
+}
+
 }
